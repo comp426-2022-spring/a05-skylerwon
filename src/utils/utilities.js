@@ -1,6 +1,6 @@
 //coin functions
 
-function countFlips(array) {
+/*function countFlips(array) {
     var heads = 0;
     var tails = 0;
     if (array.length == 1) {
@@ -52,4 +52,4 @@ function coinFlip() {
         return "tails"
     }
     return "oops";
-}      
+}      */

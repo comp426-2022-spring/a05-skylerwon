@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 const coin = require('../utils/utilities.js')
 const routes = express.Router();
 
@@ -21,4 +21,4 @@ app.get('/app/flip/call/heads', (req, res) => {
 app.get('/app/flip/call/tails', (req, res) => {
     res.statusCode = 200;
     res.json(flipACoin("tails"));
-});
+});*/
