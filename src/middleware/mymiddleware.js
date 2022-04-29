@@ -1,4 +1,4 @@
-const db = require("../services/database");
+/*const db = require("../services/database");
 
 const database = (req, res, next) => {
   let logdata = {
@@ -20,4 +20,4 @@ const stmt = logdb.prepare('INSERT INTO accesslog (remoteaddr, remoteuser, time,
     next();
 }
 
-module.exports = accesslog
+module.exports = accesslog */
