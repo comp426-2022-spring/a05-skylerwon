@@ -33,7 +33,7 @@
       <button id="guessnav">Guess the result</button>
     </nav>
     <div id="home">
-      
+    <p id="instructions"> Press a button to play a game</p>
     </div>    
     <div id="single" class="hidden">
       
@@ -43,6 +43,46 @@
     </div>
     <div id="guess" class="hidden">
       
+    </div>
+    <div id="single" class="hidden">
+      <h1 class="title">Flip a coin!</h1>
+      <button id="flip">Flip</button>
+      <p>Result:</p>
+      <img src="./assets/img/coin.png" id="quarter" class="smallcoin" />
+    </div>
+    <div id="multi" class="hidden">
+      <h1 class="title">Flip Many Coins</h1>
+      <form id="coins">
+        <label for="number">
+          <strong>Enter a number</strong>
+        </label>
+        <input type="number" name="number" id="number" />
+        <input type="submit" value="Flip coins!" />
+      </form>
+      <table id="flipresults" class="middle">
+        <tr>
+          <th><img src="./assets/img/heads.png" id="headscoin" class="smallcoin" /></th>
+          <th><img src="./assets/img/tails.png" id="tailscoin" class="smallcoin" /></th>
+        </tr>
+        <tr>
+          <td id="heads"></td>
+          <td id="tails"></td>
+        </tr>
+      </table>
+    </div>
+    <div id="guess" class="hidden">
+      <h1 id="status" class="title">Feeling lucky?</h1>
+      <form id="guess" name="guess">
+        <input type="radio" name="call" value="heads" id="number" />
+        <label for="heads">Heads</label>
+        <input type="radio" name="call" value="tails" id="number" />
+        <label for="tails">Tails</label>
+        <input type="submit" value="Guess!" />
+      </form>
+      <p>Flip Result:</p>
+      <img src="./assets/img/coin.png" id="quarter2" class="smallcoin" />
+      <p>Your guess:</p>
+      <img src="./assets/img/coin.png" id="quarter3" class="smallcoin" />
     </div>
 	<script src="main.js"></script>
   </body>
