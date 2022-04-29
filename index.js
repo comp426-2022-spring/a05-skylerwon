@@ -36,7 +36,12 @@ app.use(express.static('./public'))
 if(argv.log == 'false') {
     console.log("nothing");
 } else {
-    const accesslog = fs.createWriteStream('./log/access.log', {flags: 'a'})
+    const logdir = './log/';
+
+    if (!fs.existsSync(logdir)){
+        fs.mkdirSync(logdir);
+    }
+    const accesslog = fs.createWriteStream(logdir+'access.log', {flags: 'a'})
     app.use(morgan('merged', { stream: accesslog }))
 }
 
