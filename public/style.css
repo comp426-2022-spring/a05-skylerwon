@@ -1,15 +1,23 @@
-div.hidden {
+button.active {
+  background: black;
+  color: white;
+}
+div.active {
+  display: block;
+}
+div.inactive {
   display: none;
 }
-
-div.active {
-  border: 5px solid red;
+ul li{
+  display: inline;
 }
-
 img.bigcoin {
-  width: 50px;
+  width: 100px;
 }
-
 img.smallcoin {
   width: 50px;
+}
+
+.small_line {
+  line-height: 0.3;
 }
